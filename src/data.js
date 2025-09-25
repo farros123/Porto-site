@@ -187,6 +187,7 @@ export const listProyek = [
     desk: "HealthyDoc adalah aplikasi web Laravel untuk manajemen data rekam medis. Dengan fitur CRUD, project ini membantu staf medis mengelola data pasien, riwayat pemeriksaan, dan tindakan medis secara terpusat dan efisien!",
     tools: ["Vscode","PHP","HTML", "CSS", "Javascript", "Laravel"],
     preview: [ Medtech1, Medtech2, Medtech3, Medtech4, Medtech5 ],
+    github: "https://github.com/farros123/Medtech-Final",
     dad: "200",
   },
   {
@@ -197,6 +198,7 @@ export const listProyek = [
     tools: ["Figma", "Chrome"],
     preview: [Uiuxproject1, Uiuxproject2, Uiuxproject3, Uiuxproject4, Uiuxproject5, Uiuxproject6],
     dad: "300",
+    github: "https://www.figma.com/proto/5TbO73sMKSUr6cRkNHuw7n/Untitled?node-id=75-294&t=PKAYCIFtmtPnr43x-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
   },
   {
     id: 3,
@@ -206,6 +208,7 @@ export const listProyek = [
     tools: ["Android Studio", "Kotlin", "Figma"],
     preview: [Inatravel1, Inatravel2, Inatravel3, Inatravel4, Inatravel5, Inatravel6],
     dad: "400",
+    github: "https://github.com/farros123/InaTravellApp"
   },
   {
     id: 4,
@@ -215,6 +218,7 @@ export const listProyek = [
     tools: ["Figma", "Chrome"],
     preview: [Uiuxcourse1, Uiuxcourse2],
     dad: "500",
+    github: "",
   },
   {
     id: 5,
@@ -224,6 +228,7 @@ export const listProyek = [
     tools: ["Python", "Chrome",],
     preview: [AQI1, AQI2, AQI3],
     dad: "600",
+    github: "https://colab.research.google.com/drive/1nID9mPtCH1sZ612IXSAWXmCDDRaDNAHB?usp=sharing",
   },
   {
     id: 6,
@@ -233,6 +238,7 @@ export const listProyek = [
     tools: ["Vscode","PHP", "HTML", "CSS", "Javascript", "Laravel"],
     preview: [SIP1, SIP2, SIP3, SIP4, SIP5, SIP6, SIP7, SIP8, SIP9],
     dad: "700",
+    github: "https://github.com/farros123/Laravel-Kontruksi",
   },
   {
    id: 7,

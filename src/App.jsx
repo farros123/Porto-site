@@ -45,7 +45,7 @@ const closeFullscreen = () => setIsFullscreen(false);
            Hi, Saya Ghalib Farros Syahreal
          </h1>
           <p className="text-base/loose mb-6">
-                           Lulusan jurusan Sistem Informasi di Universitas Amikom Yogyakarta saat ini sedang menunggu wisuda.         </p>
+                           Lulusan jurusan Sistem Informasi di Universitas Amikom Yogyakarta sedang mencari pekerjaan.         </p>
           <div className="flex items-center sm:gap-4 gap-2">
                  <a
                 href="/Cv_Farros.pdf"
@@ -184,10 +184,6 @@ const closeFullscreen = () => setIsFullscreen(false);
     );
   })()}
 </div>
-
-
-
-
       {/* Project */}
       <div className="proyek mt-32 py-10"id="project">
         <h1 className="text-center text-4xl font-bold mb-2" data-aos="fade-up" data-aos-duration="1000">Proyek</h1>
@@ -234,7 +230,6 @@ const closeFullscreen = () => setIsFullscreen(false);
     Lihat Project
   </button>
 )}
-
                 </div>
               </div>
             </div>
@@ -260,7 +255,7 @@ const closeFullscreen = () => setIsFullscreen(false);
   alt={`Preview ${slideIndex + 1}`}
   className="w-full h-full object-cover rounded-lg cursor-pointer"
   onClick={() =>
-    window.open(currentProyek.preview[slideIndex], "_blank", "noopener,noreferrer")
+      window.open(currentProyek.github, "_blank", "noopener,noreferrer")
   }
 />
          {/* Tombol panah kiri  */}
