@@ -174,8 +174,7 @@ const closeFullscreen = () => setIsFullscreen(false);
           <div className="text-center mt-10">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="bg-violet-700 px-6 py-3 rounded-lg border border-zinc-600 hover:bg-violet-600 transition"
-            >
+              className="bg-violet-700 px-6 py-3 rounded-lg border border-zinc-600 hover:bg-violet-600 transform transition-transform duration-300 hover:scale-105 active:scale-95">
               {showAll ? "Sembunyikan" : "Selengkapnya"}
             </button>
           </div>
@@ -218,17 +217,17 @@ const closeFullscreen = () => setIsFullscreen(false);
     rel="noopener noreferrer"
     className="block"
   >
-    <button className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 w-full">
+    <button   className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 w-full transform transition-transform duration-300 hover:scale-105 active:scale-95">
       Lihat Project
     </button>
   </a>
 ) : (
   <button
-    onClick={() => openModal(proyek)}
-    className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 w-full"
-  >
-    Lihat Project
-  </button>
+  onClick={() => openModal(proyek)}
+  className="bg-violet-700 p-3 rounded-lg block border border-zinc-600 hover:bg-violet-600 w-full transform transition-transform duration-300 hover:scale-105 active:scale-95"
+>
+  Lihat Project
+</button>
 )}
                 </div>
               </div>

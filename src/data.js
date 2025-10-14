@@ -1,8 +1,9 @@
 import Profile1 from "/assets/Profile1.png";
-import coding from "/assets/coding.jpg"
+import coding from "/assets/coding.jpg";
 
 const Image = {
-  Profile1, coding,
+  Profile1,
+  coding,
 };
 
 export default Image;
@@ -22,7 +23,6 @@ import Tools12 from "/assets/tools/php.png";
 import Tools13 from "/assets/tools/python.png";
 import Tools14 from "/assets/tools/codeigniter.png";
 import Tools15 from "/assets/tools/kotlin.png";
-
 
 export const listTools = [
   {
@@ -124,7 +124,8 @@ export const listTools = [
     dad: "1400",
   },
   {
-    id: 15, gambar: Tools15,
+    id: 15,
+    gambar: Tools15,
     nama: "Kotlin",
     ket: "Bahasa Pemrograman",
     dad: "1500",
@@ -135,7 +136,7 @@ import Proyek1 from "/assets/proyek/healthydoc.jpg";
 import Proyek2 from "/assets/proyek/uiuxproject1.jpg";
 import Proyek3 from "/assets/proyek/uiuxtravl.jpg";
 import Proyek4 from "/assets/proyek/uiuxguru.jpg";
-import Proyek5 from "/assets/proyek/AQIcategories.png";
+import Proyek5 from "/assets/proyek/manageweb.png";
 import Proyek6 from "/assets/proyek/projek.jpg";
 
 import Medtech1 from "/assets/proyek/medtechpreview1.jpg";
@@ -161,10 +162,6 @@ import Inatravel6 from "/assets/proyek/Inatravel6.jpg";
 import Uiuxcourse1 from "/assets/proyek/uiuxcourse1.jpg";
 import Uiuxcourse2 from "/assets/proyek/uiuxcourse2.jpg";
 
-import AQI1 from "/assets/proyek/AQIdistribution.png";
-import AQI2 from "/assets/proyek/AQIcategories.png";
-import AQI3 from "/assets/proyek/AQItraining.png";
-
 import SIP1 from "/assets/proyek/penyewaan1.jpg";
 import SIP2 from "/assets/proyek/penyewaan2.jpg";
 import SIP3 from "/assets/proyek/penyewaan3.jpg";
@@ -179,14 +176,17 @@ import GMTK1 from "/assets/proyek/gimmtk.jpg";
 import MBALL from "/assets/proyek/GBALL.jpg";
 import PCK from "/assets/proyek/PCK.jpg";
 
+import M1 from "/assets/proyek/manageweb1.jpg";
+import M2 from "/assets/proyek/manageweb2.jpg";
+
 export const listProyek = [
   {
     id: 1,
     gambar: Proyek1,
     nama: "Sistem Infromasi Healthydoc",
     desk: "HealthyDoc adalah aplikasi web Laravel untuk manajemen data rekam medis. Dengan fitur CRUD, project ini membantu staf medis mengelola data pasien, riwayat pemeriksaan, dan tindakan medis secara terpusat dan efisien!",
-    tools: ["Vscode","PHP","HTML", "CSS", "Javascript", "Laravel"],
-    preview: [ Medtech1, Medtech2, Medtech3, Medtech4, Medtech5 ],
+    tools: ["Vscode", "PHP", "HTML", "CSS", "Javascript", "Laravel"],
+    preview: [Medtech1, Medtech2, Medtech3, Medtech4, Medtech5],
     github: "https://github.com/farros123/Medtech-Final",
     dad: "200",
   },
@@ -196,9 +196,17 @@ export const listProyek = [
     nama: "Project UI/UX",
     desk: "UI/UX marketplace fashion dirancang untuk mempermudah pengguna dalam menjelajah produk, memilih kategori, dan melakukan pembelian. Desain difokuskan pada pengalaman belanja yang nyaman, modern, dan responsif di berbagai.",
     tools: ["Figma", "Chrome"],
-    preview: [Uiuxproject1, Uiuxproject2, Uiuxproject3, Uiuxproject4, Uiuxproject5, Uiuxproject6],
+    preview: [
+      Uiuxproject1,
+      Uiuxproject2,
+      Uiuxproject3,
+      Uiuxproject4,
+      Uiuxproject5,
+      Uiuxproject6,
+    ],
     dad: "300",
-    github: "https://www.figma.com/proto/5TbO73sMKSUr6cRkNHuw7n/Untitled?node-id=75-294&t=PKAYCIFtmtPnr43x-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1"
+    github:
+      "https://www.figma.com/proto/5TbO73sMKSUr6cRkNHuw7n/Untitled?node-id=75-294&t=PKAYCIFtmtPnr43x-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
   },
   {
     id: 3,
@@ -206,9 +214,16 @@ export const listProyek = [
     nama: "InaTravel",
     desk: "InaTravel adalah aplikasi mobile berbasis Kotlin untuk eksplorasi wisata dan kuliner. Aplikasi ini memudahkan pengguna mencari destinasi terdekat berdasarkan kategori, dengan antarmuka praktis dan fitur pencarian yang informatif.",
     tools: ["Android Studio", "Kotlin", "Figma"],
-    preview: [Inatravel1, Inatravel2, Inatravel3, Inatravel4, Inatravel5, Inatravel6],
+    preview: [
+      Inatravel1,
+      Inatravel2,
+      Inatravel3,
+      Inatravel4,
+      Inatravel5,
+      Inatravel6,
+    ],
     dad: "400",
-    github: "https://github.com/farros123/InaTravellApp"
+    github: "https://github.com/farros123/InaTravellApp",
   },
   {
     id: 4,
@@ -223,50 +238,50 @@ export const listProyek = [
   {
     id: 5,
     gambar: Proyek5,
-    nama: "Project Machine Learning",
-    desk: " prediksi AQI menggunakan algoritma Naive Bayes, SVM, dan Decision Tree. dengan Python dan dataset kualitas udara, project ini bertujuan mengklasifikasi kualitas udara berdasarkan data polusi seperti PM2.5, CO, NO2, dll.",
-    tools: ["Python", "Chrome",],
-    preview: [AQI1, AQI2, AQI3],
+    nama: "Manage Company Website",
+    desk: "Manage Company Website adalah proyek yang bertujuan untuk mengelola informasi perusahaan secara efisien. Dengan fitur-fitur seperti manajemen karyawan, pengelolaan proyek, dan pelaporan, aplikasi ini membantu perusahaan dalam mengelola company lebih terstruktur.",
+    tools: ["Vscode", "PHP", "Html", "CSS"],
+    preview: [M1, M2],
     dad: "600",
-    github: "https://colab.research.google.com/drive/1nID9mPtCH1sZ612IXSAWXmCDDRaDNAHB?usp=sharing",
+    github: "",
   },
   {
     id: 6,
     gambar: Proyek6,
     nama: "Sistem Informasi Penyewaan",
     desk: "Sistem informasi penyewaan alat berat berbasis web untuk menggantikan proses manual. Project ini mencakup manajemen pelanggan, alat berat, transaksi sewa, perhitungan biaya, dan laporan otomatis guna meningkatkan efisiensi operasional.",
-    tools: ["Vscode","PHP", "HTML", "CSS", "Javascript", "Laravel"],
+    tools: ["Vscode", "PHP", "HTML", "CSS", "Javascript", "Laravel"],
     preview: [SIP1, SIP2, SIP3, SIP4, SIP5, SIP6, SIP7, SIP8, SIP9],
     dad: "700",
     github: "https://github.com/farros123/Laravel-Kontruksi",
   },
   {
-   id: 7,
+    id: 7,
     gambar: GMTK1,
     nama: "Game Edukatif Robot-MTK",
     desk: "Robot-MTK adalah game edukatif interaktif bertema robot yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
-    tools: ["Vscode","Vite", "HTML", "CSS", "Javascript", "ReactJs"],
+    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
     preview: "https://robot-math-ten.vercel.app/",
-    dad: "800", 
+    dad: "800",
   },
   {
-  id: 8,
-  gambar: MBALL,
-  nama: "Game Edukatif Math-Ball",
-  desk: "Math-Ball adalah game edukatif interaktif bertema bola-bola yang mengajarkan konsep matematika secara menyenangkan. Pemain menjawab soal hitung dengan cara mengarahkan atau memilih bola yang berisi jawaban benar, menghadapi tantangan waktu dan skor.",
-  tools: ["Vscode","Vite", "HTML", "CSS", "Javascript", "ReactJs"],
-  preview: "https://mathball-game.vercel.app/",
-  dad: "900",
+    id: 8,
+    gambar: MBALL,
+    nama: "Game Edukatif Math-Ball",
+    desk: "Math-Ball adalah game edukatif interaktif bertema bola-bola yang mengajarkan konsep matematika secara menyenangkan. Pemain menjawab soal hitung dengan cara mengarahkan atau memilih bola yang berisi jawaban benar, menghadapi tantangan waktu dan skor.",
+    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
+    preview: "https://mathball-game.vercel.app/",
+    dad: "900",
   },
   {
-  id: 9,
-  gambar: PCK,
-  nama: "Game Edukatif Kosa-Kata",
-  desk: "Game Edukatif Kosa-Kata adalah permainan interaktif untuk melatih kemampuan bahasa dan memperluas perbendaharaan kata. Pemain mencocokkan kata dengan arti, tersedia dalam mode siswa untuk belajar dan mode admin untuk mengelola soal.",
-  tools: ["Vscode","Vite", "HTML", "CSS", "Javascript", "ReactJs"],
-  preview: "https://gim-cocokkata.vercel.app/",
-  dad: "1000",
-  }
+    id: 9,
+    gambar: PCK,
+    nama: "Game Edukatif Kosa-Kata",
+    desk: "Game Edukatif Kosa-Kata adalah permainan interaktif untuk melatih kemampuan bahasa dan memperluas perbendaharaan kata. Pemain mencocokkan kata dengan arti, tersedia dalam mode siswa untuk belajar dan mode admin untuk mengelola soal.",
+    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
+    preview: "https://gim-cocokkata.vercel.app/",
+    dad: "1000",
+  },
 ];
 
 import Aiweb from "/assets/sertif/aiweb.jpg";
@@ -324,7 +339,7 @@ export const listSertifikat = [
     gambar: DataAnalyst2,
     dad: "400",
   },
-   {
+  {
     id: 5,
     judul: "Bootcamp Data Analyst - SQL Fundamental",
     deskripsi:
@@ -358,7 +373,7 @@ export const listSertifikat = [
     dad: "700",
   },
   {
-     id: 8,
+    id: 8,
     judul: "Kuliah Umum & ITC AMIKOM",
     deskripsi:
       "Aktif mengikuti Kuliah Umum dan kegiatan ITC AMIKOM untuk memperkuat soft skill seperti komunikasi, kepemimpinan, dan manajemen waktu.",
