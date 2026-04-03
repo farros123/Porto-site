@@ -1,48 +1,96 @@
 import { useState, useEffect } from "react";
 
+const navLinks = [
+  { href: "#beranda", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#sertif", label: "Experience" },
+  { href: "#project", label: "Project" },
+  { href: "#contact", label: "Contact" },
+];
+
 const Navbar = () => {
-  const [active, setActive] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 150) {
-        setActive(true);
-      } else {
-        setActive(false);
-      }
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const onScroll = () => setScrolled(window.scrollY > 50);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // close mobile menu on link click
+  const handleLinkClick = () => setMenuOpen(false);
+
   return (
-    <div className="navbar py-7 flex items-center justify-between">
-      <div className="logo">
-        <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent
-        md:text-white">My Portofolio</h1>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "nav-glass py-3" : "py-5 bg-transparent"
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
+        {/* Logo */}
+        <a href="#beranda" className="text-xl font-bold tracking-tight">
+          <span className="gradient-text">Farros</span>
+          <span className="text-zinc-400">.dev</span>
+        </a>
+
+        {/* Desktop Nav */}
+        <ul className="hidden md:flex items-center gap-8">
+          {navLinks.map((link) => (
+            <li key={link.href}>
+              <a
+                href={link.href}
+                className="text-sm font-medium text-zinc-400 hover:text-white transition-colors duration-200 relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-violet-500 after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* Mobile Hamburger */}
+        <button
+          className="md:hidden flex flex-col gap-1.5 cursor-pointer z-50"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <span
+            className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+              menuOpen ? "rotate-45 translate-y-2" : ""
+            }`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+              menuOpen ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+              menuOpen ? "-rotate-45 -translate-y-2" : ""
+            }`}
+          />
+        </button>
+
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden fixed inset-0 bg-zinc-950/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 transition-all duration-300 ${
+            menuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+        >
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={handleLinkClick}
+              className="text-2xl font-semibold text-zinc-300 hover:text-white transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
-      <ul className={`menu flex items-center sm:gap-10 gap-4 md:static fixed left-1/2 -translate-x-1/2 md:-translate-x-0 
-      -top-10 opacity-0 md:opacity-100 bg-white/30 backdrop-blud-md p-4 rounded-br-2xl rounded-bl-2xl md:bg-transparent transition-all md:transition-none z-40 ${active ? "top-0 opacity-100" : "-top-10 opacity-0"}`}>
-        <li>
-          <a href="#beranda" className="sm:text-lg text-base font-medium">Home</a>
-        </li>
-        <li>
-          <a href="#about" className="sm:text-lg text-base font-medium">About</a>
-        </li>
-        <li>
-          <a href="#sertif" className="sm:text-lg text-base font-medium">Experience</a>
-        </li>
-        <li>
-          <a href="#project" className="sm:text-lg text-base font-medium">Project</a>
-        </li>
-        <li>
-          <a href="#contact" className="sm:text-lg text-base font-medium">Contact</a>
-        </li>
-      </ul>
-    </div>
+    </nav>
   );
 };
 
-export default Navbar
+export default Navbar;
