@@ -9,7 +9,7 @@ const HeroSection = () => {
           <div className="animate-fade-up">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800/60 border border-zinc-700/50 mb-8">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-sm text-zinc-400">Sedang Berproses ✌️</span>
+              <span className="text-sm text-zinc-400">Open to work</span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
@@ -20,8 +20,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-lg">
-              Lulusan jurusan Sistem Informasi di Universitas Amikom Yogyakarta
-              sedang mencari pekerjaan.
+              Lulusan jurusan Sistem Informasi di Universitas Amikom Yogyakarta.
             </p>
 
             <div className="flex items-center gap-4 mb-10">

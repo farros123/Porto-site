@@ -62,7 +62,7 @@ const AboutSection = () => {
                 <i className="ri-focus-3-line text-violet-400 ri-lg" />
               </div>
               <div>
-                <p className="text-sm font-semibold">Mencari Pekerjaan</p>
+                <p className="text-sm font-semibold">Open to work</p>
                 <p className="text-xs text-zinc-500">Open to work</p>
               </div>
             </div>
