@@ -10,15 +10,14 @@ const SkillsSection = () => {
           </h2>
           <p className="section-sub">Berikut ini Skills dan Tools yang saya pelajari</p>
         </div>
-
         <div className="grid xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-2 gap-4">
           {listTools.map((tool) => (
             <div
               key={tool.id}
               className="glass-card p-4 flex items-center gap-3 group cursor-default"
               data-aos="fade-up"
-              data-aos-duration="600"
               data-aos-delay={tool.dad}
+              data-aos-duration="600"
             >
               <div className="w-12 h-12 rounded-xl bg-zinc-800 p-2 flex items-center justify-center shrink-0 group-hover:bg-zinc-700 transition-colors">
                 <img

@@ -173,8 +173,11 @@ import SIP8 from "/assets/proyek/penyewaan8.jpg";
 import SIP9 from "/assets/proyek/penyewaan9.jpg";
 
 import GMTK1 from "/assets/proyek/gimmtk.jpg";
-import MBALL from "/assets/proyek/GBALL.jpg";
+import GBALL from "/assets/proyek/GBALL.jpg";
 import PCK from "/assets/proyek/PCK.jpg";
+import BENING from "/assets/proyek/homebening.png";
+import BUK1 from "/assets/proyek/bukitbuku1.png";
+import LA from "/assets/proyek/landingpage.png";
 
 import M1 from "/assets/proyek/manageweb1.jpg";
 import M2 from "/assets/proyek/manageweb2.jpg";
@@ -266,21 +269,48 @@ export const listProyek = [
   },
   {
     id: 8,
-    gambar: MBALL,
-    nama: "Game Edukatif Math-Ball",
-    desk: "Math-Ball adalah game edukatif interaktif bertema bola-bola yang mengajarkan konsep matematika secara menyenangkan. Pemain menjawab soal hitung dengan cara mengarahkan atau memilih bola yang berisi jawaban benar, menghadapi tantangan waktu dan skor.",
-    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
+    gambar: GBALL,
+    nama: "Game Edukatif MathBall",
+    desk: "MathBall adalah game edukatif interaktif bertema matematika yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
+    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
     preview: "https://mathball-game.vercel.app/",
     dad: "900",
   },
   {
     id: 9,
     gambar: PCK,
-    nama: "Game Edukatif Kosa-Kata",
-    desk: "Game Edukatif Kosa-Kata adalah permainan interaktif untuk melatih kemampuan bahasa dan memperluas perbendaharaan kata. Pemain mencocokkan kata dengan arti, tersedia dalam mode siswa untuk belajar dan mode admin untuk mengelola soal.",
-    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
+    nama: "Game Edukatif Cocok Kata",
+    desk: "Cocok Kata adalah game edukatif interaktif bertema kata yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
+    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "Laravel"],
     preview: "https://gim-cocokkata.vercel.app/",
     dad: "1000",
+  },
+  {
+    id: 10,
+    gambar: BENING,
+    nama: "Website Bening Rua Pustaka",
+    desk: "Bening Rua Pustaka adalah website berbasis WordPress yang menyediakan layanan penjualan buku dan publikasi artikel. Dengan sistem manajemen konten yang terstruktur, pengguna dapat menjelajahi koleksi buku serta mengakses berbagai artikel informatif dengan mudah.",
+    tools: ["Wordpress", "Html", "CSS", "Javascript", "PHP"],
+    preview: "https://beningruapustaka.com/",
+    dad: "1100",
+  },
+  {
+    id: 11,
+    gambar: BUK1,
+    nama: "Website Bukit Buku",
+    desk: "Bukit Buku adalah platform web yang menyediakan koleksi buku dan artikel edukatif dalam satu tempat. Dengan fitur katalog buku, kategori, dan artikel informatif, pengguna dapat menemukan bacaan yang sesuai dengan minat dan kebutuhan mereka.",
+    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
+    preview: "https://bukitbuku.com/",
+    dad: "1200",
+  },
+  {
+    id: 12,
+    gambar: LA,
+    nama: "Landing Page Bukit Buku",
+    desk: "Landing page Bukit Buku adalah platform web yang menyediakan koleksi buku dan artikel edukatif dalam satu tempat. Dengan fitur katalog buku, kategori, dan artikel informatif, pengguna dapat menemukan bacaan yang sesuai dengan minat dan kebutuhan mereka.",
+    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
+    preview: "https://farros123.github.io/Landingpage-artikel/",
+    dad: "1300",
   },
 ];
 
