@@ -197,7 +197,7 @@ export const listProyek = [
     id: 2,
     gambar: Proyek2,
     nama: "Project UI/UX",
-    desk: "UI/UX marketplace fashion dirancang untuk mempermudah pengguna dalam menjelajah produk, memilih kategori, dan melakukan pembelian. Desain difokuskan pada pengalaman belanja yang nyaman, modern, dan responsif di berbagai.",
+    desk: "UI/UX marketplace fashion yang dirancang untuk mempermudah pengguna dalam menjelajah produk, memilih kategori, dan melakukan pembelian. Desain difokuskan pada pengalaman belanja yang nyaman, modern, dan responsif di berbagai.",
     tools: ["Figma", "Chrome"],
     preview: [
       Uiuxproject1,
