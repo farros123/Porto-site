@@ -174,7 +174,6 @@ import SIP9 from "/assets/proyek/penyewaan9.jpg";
 
 import GMTK1 from "/assets/proyek/gimmtk.jpg";
 import GBALL from "/assets/proyek/GBALL.jpg";
-import PCK from "/assets/proyek/PCK.jpg";
 import BENING from "/assets/proyek/homebening.png";
 import BUK1 from "/assets/proyek/bukitbuku1.png";
 import LA from "/assets/proyek/landingpage.png";
@@ -182,19 +181,48 @@ import LA from "/assets/proyek/landingpage.png";
 import M1 from "/assets/proyek/manageweb1.jpg";
 import M2 from "/assets/proyek/manageweb2.jpg";
 
+import Catur from "/assets/proyek/caturr.png";
+
 export const listProyek = [
   {
     id: 1,
+    gambar: BENING,
+    nama: "Website Bening Rua Pustaka",
+    desk: "Bening Rua Pustaka adalah website berbasis WordPress yang menyediakan layanan penjualan buku dan publikasi artikel. Dengan sistem manajemen konten yang terstruktur, pengguna dapat menjelajahi koleksi buku serta mengakses berbagai artikel informatif dengan mudah.",
+    tools: ["Wordpress", "Html", "CSS", "Javascript", "PHP"],
+    preview: "https://beningruapustaka.com/",
+    dad: "200",
+  },
+  {
+    id: 2,
+    gambar: BUK1,
+    nama: "Website Bukit Buku",
+    desk: "Bukit Buku adalah platform web yang menyediakan koleksi buku dan artikel edukatif dalam satu tempat. Dengan fitur katalog buku, kategori, dan artikel informatif, pengguna dapat menemukan bacaan yang sesuai dengan minat dan kebutuhan mereka.",
+    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
+    preview: "https://bukitbuku.com/",
+    dad: "300",
+  },
+  {
+    id: 3,
+    gambar: LA,
+    nama: "Landing Page Bukit Buku",
+    desk: "Landing page Bukit Buku adalah platform web yang menyediakan koleksi buku dan artikel edukatif dalam satu tempat. Dengan fitur katalog buku, kategori, dan artikel informatif, pengguna dapat menemukan bacaan yang sesuai dengan minat dan kebutuhan mereka.",
+    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
+    preview: "https://farros123.github.io/Landingpage-artikel/",
+    dad: "400",
+  },
+  {
+    id: 4,
     gambar: Proyek1,
     nama: "Sistem Infromasi Healthydoc",
     desk: "HealthyDoc adalah aplikasi web Laravel untuk manajemen data rekam medis. Dengan fitur CRUD, project ini membantu staf medis mengelola data pasien, riwayat pemeriksaan, dan tindakan medis secara terpusat dan efisien!",
     tools: ["Vscode", "PHP", "HTML", "CSS", "Javascript", "Laravel"],
     preview: [Medtech1, Medtech2, Medtech3, Medtech4, Medtech5],
     github: "https://github.com/farros123/Medtech-Final",
-    dad: "200",
+    dad: "500",
   },
   {
-    id: 2,
+    id: 5,
     gambar: Proyek2,
     nama: "Project UI/UX",
     desk: "UI/UX marketplace fashion yang dirancang untuk mempermudah pengguna dalam menjelajah produk, memilih kategori, dan melakukan pembelian. Desain difokuskan pada pengalaman belanja yang nyaman, modern, dan responsif di berbagai.",
@@ -207,12 +235,12 @@ export const listProyek = [
       Uiuxproject5,
       Uiuxproject6,
     ],
-    dad: "300",
+    dad: "600",
     github:
       "https://www.figma.com/proto/5TbO73sMKSUr6cRkNHuw7n/Untitled?node-id=75-294&t=PKAYCIFtmtPnr43x-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
   },
   {
-    id: 3,
+    id: 6,
     gambar: Proyek3,
     nama: "InaTravel",
     desk: "InaTravel adalah aplikasi mobile berbasis Kotlin untuk eksplorasi wisata dan kuliner. Aplikasi ini memudahkan pengguna mencari destinasi terdekat berdasarkan kategori, dengan antarmuka praktis dan fitur pencarian yang informatif.",
@@ -225,91 +253,64 @@ export const listProyek = [
       Inatravel5,
       Inatravel6,
     ],
-    dad: "400",
+    dad: "700",
     github: "https://github.com/farros123/InaTravellApp",
   },
   {
-    id: 4,
+    id: 7,
     gambar: Proyek4,
     nama: "UI/UX Course",
     desk: "UI/UX Course dirancang untuk memahami dasar desain antarmuka dan pengalaman pengguna. Kursus ini mencakup riset pengguna, wireframing, prototyping, serta prinsip desain visual yang efektif dalam pengembangan aplikasi digital.",
     tools: ["Figma", "Chrome"],
     preview: [Uiuxcourse1, Uiuxcourse2],
-    dad: "500",
+    dad: "800",
     github: "",
   },
   {
-    id: 5,
+    id: 8,
     gambar: Proyek5,
     nama: "Manage Company Website",
     desk: "Manage Company Website adalah proyek yang bertujuan untuk mengelola informasi perusahaan secara efisien. Dengan fitur-fitur seperti manajemen karyawan, pengelolaan proyek, dan pelaporan, aplikasi ini membantu perusahaan dalam mengelola company lebih terstruktur.",
     tools: ["Vscode", "PHP", "Html", "CSS"],
     preview: [M1, M2],
-    dad: "600",
+    dad: "900",
     github: "",
   },
   {
-    id: 6,
+    id: 9,
     gambar: Proyek6,
     nama: "Sistem Informasi Penyewaan",
     desk: "Sistem informasi penyewaan alat berat berbasis web untuk menggantikan proses manual. Project ini mencakup manajemen pelanggan, alat berat, transaksi sewa, perhitungan biaya, dan laporan otomatis guna meningkatkan efisiensi operasional.",
     tools: ["Vscode", "PHP", "HTML", "CSS", "Javascript", "Laravel"],
     preview: [SIP1, SIP2, SIP3, SIP4, SIP5, SIP6, SIP7, SIP8, SIP9],
-    dad: "700",
+    dad: "1000",
     github: "https://github.com/farros123/Laravel-Kontruksi",
   },
   {
-    id: 7,
+    id: 10,
     gambar: GMTK1,
     nama: "Game Edukatif Robot-MTK",
     desk: "Robot-MTK adalah game edukatif interaktif bertema robot yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
     tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
     preview: "https://robot-math-ten.vercel.app/",
-    dad: "800",
+    dad: "1100",
   },
   {
-    id: 8,
+    id: 11,
     gambar: GBALL,
     nama: "Game Edukatif MathBall",
     desk: "MathBall adalah game edukatif interaktif bertema matematika yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
     tools: ["Vscode", "html", "css", "javascript", "reactjs"],
     preview: "https://mathball-game.vercel.app/",
-    dad: "900",
-  },
-  {
-    id: 9,
-    gambar: PCK,
-    nama: "Game Edukatif Cocok Kata",
-    desk: "Cocok Kata adalah game edukatif interaktif bertema kata yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
-    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "Laravel"],
-    preview: "https://gim-cocokkata.vercel.app/",
-    dad: "1000",
-  },
-  {
-    id: 10,
-    gambar: BENING,
-    nama: "Website Bening Rua Pustaka",
-    desk: "Bening Rua Pustaka adalah website berbasis WordPress yang menyediakan layanan penjualan buku dan publikasi artikel. Dengan sistem manajemen konten yang terstruktur, pengguna dapat menjelajahi koleksi buku serta mengakses berbagai artikel informatif dengan mudah.",
-    tools: ["Wordpress", "Html", "CSS", "Javascript", "PHP"],
-    preview: "https://beningruapustaka.com/",
-    dad: "1100",
-  },
-  {
-    id: 11,
-    gambar: BUK1,
-    nama: "Website Bukit Buku",
-    desk: "Bukit Buku adalah platform web yang menyediakan koleksi buku dan artikel edukatif dalam satu tempat. Dengan fitur katalog buku, kategori, dan artikel informatif, pengguna dapat menemukan bacaan yang sesuai dengan minat dan kebutuhan mereka.",
-    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
-    preview: "https://bukitbuku.com/",
     dad: "1200",
   },
   {
     id: 12,
-    gambar: LA,
-    nama: "Landing Page Bukit Buku",
-    desk: "Landing page Bukit Buku adalah platform web yang menyediakan koleksi buku dan artikel edukatif dalam satu tempat. Dengan fitur katalog buku, kategori, dan artikel informatif, pengguna dapat menemukan bacaan yang sesuai dengan minat dan kebutuhan mereka.",
-    tools: ["Vscode", "html", "css", "javascript", "reactjs"],
-    preview: "https://farros123.github.io/Landingpage-artikel/",
+    gambar: Catur,
+    nama: "Game Catur",
+    desk: "Game catur interaktif yang dirancang untuk mempermudah pengguna dalam bermain catur. Desain difokuskan pada pengalaman bermain yang nyaman, modern, dan responsif di berbagai perangkat.",
+    tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
+    preview: "https://chess-react-9biv.vercel.app/",
     dad: "1300",
   },
 ];
@@ -323,10 +324,32 @@ import SertifECommerce from "/assets/sertif/Sosialisasi Kebijakan di Bidang Perd
 import DataAnalyst1 from "/assets/sertif/data analyst1.png";
 import DataAnalyst2 from "/assets/sertif/data analyst 2.png";
 import DataAnalyst3 from "/assets/sertif/data analyst 3.png";
+import SertifWebDev from "/assets/sertif/maganghub.jpg";
+import SertifBeningRua from "/assets/sertif/beningsertif.jpg.jpeg";
 
 export const listSertifikat = [
   {
     id: 1,
+    judul: "MagangHub Web Development",
+    deskripsi: "Telah menyelesaikan program Kemnaker 'MagangHub Web Development'. Membuktikan inisiatif serta komitmen dalam memperdalam keterampilan pengembangan web.",
+    bulan: "Mei 2026",
+    penyelenggara: "Kemnaker",
+    tempat: "Yogyakarta",
+    gambar: SertifWebDev,
+    dad: "100",
+  },
+  {
+    id: 2,
+    judul: "Bening Rua Pustaka",
+    deskripsi: "Telah menyelesaikan periode kerja magang yang diselenggarakan oleh Kementerian Tenaga Kerja dan CV Bening Rua Pustaka",
+    bulan: "Mei 2026",
+    penyelenggara: "Kementerian Tenaga Kerja dan CV Bening Rua Pustaka",
+    tempat: "Yogyakarta",
+    gambar: SertifBeningRua,
+    dad: "200",
+  },
+  {
+    id: 3,
     judul: "Website UI/UX Designing using ChatGPT",
     deskripsi:
       "Telah menyelesaikan kursus online 'Website UI/UX Designing using ChatGPT'. Membuktikan inisiatif serta komitmen dalam memperdalam keterampilan desain antarmuka dan pengalaman pengguna.",
@@ -334,10 +357,10 @@ export const listSertifikat = [
     penyelenggara: "Simplelearn Skillup",
     tempat: "Online",
     gambar: Aiweb,
-    dad: "100",
+    dad: "300",
   },
   {
-    id: 2,
+    id: 4,
     judul: "Web Development For Beginners",
     deskripsi:
       "Telah menyelesaikan kursus online 'Web Development For Beginners'.Mempelajari dasar-dasar pengembangan web mulai dari HTML, CSS, hingga JavaScript. Peserta memahami konsep fundamental pembuatan website responsif dan struktur halaman web modern.",
@@ -345,10 +368,10 @@ export const listSertifikat = [
     penyelenggara: "Simplelearn Skillup",
     tempat: "Online",
     gambar: Web,
-    dad: "200",
+    dad: "400",
   },
   {
-    id: 3,
+    id: 5,
     judul: "Bootcamp Data Analyst - SQL Fundamental",
     deskripsi:
       "Peserta bootcamp 'Elevating Your SQL Skills: Intermediate Technique for Data Analysis'. Mendalami subquery, CTE, dan window function.",
@@ -356,10 +379,10 @@ export const listSertifikat = [
     penyelenggara: "SmartPath",
     tempat: "Online",
     gambar: DataAnalyst3,
-    dad: "300",
+    dad: "500",
   },
   {
-    id: 4,
+    id: 6,
     judul: "Bootcamp Data Analyst - SQL Fundamental",
     deskripsi:
       "Peserta bootcamp 'Mastering SQL Fundamental: From Concept to Application'. Mempelajari dasar-dasar SQL dan praktik query untuk analisis data.",
@@ -367,10 +390,10 @@ export const listSertifikat = [
     penyelenggara: "SmartPath",
     tempat: "Online",
     gambar: DataAnalyst2,
-    dad: "400",
+    dad: "600",
   },
   {
-    id: 5,
+    id: 7,
     judul: "Bootcamp Data Analyst - SQL Fundamental",
     deskripsi:
       "Peserta bootcamp 'Mastering SQL Fundamental: From Concept to Application'.Overview of Data Analysis, Carrer, and Salary.",
@@ -378,10 +401,10 @@ export const listSertifikat = [
     penyelenggara: "SmartPath",
     tempat: "Online",
     gambar: DataAnalyst1,
-    dad: "500",
+    dad: "700",
   },
   {
-    id: 6,
+    id: 8,
     judul: "IFCAMP 2023 - Laravel",
     deskripsi:
       'Peserta webinar "Building Apps with Framework Laravel" bersama Avip Syaifulloh. Mendapatkan pemahaman teknis dan praktik dasar Laravel.',
@@ -389,10 +412,10 @@ export const listSertifikat = [
     penyelenggara: "Telkom University",
     tempat: "Online",
     gambar: SertifLaravel,
-    dad: "600",
+    dad: "800",
   },
   {
-    id: 7,
+    id: 9,
     judul: "Sosialisasi Kebijakan E-Commerce",
     deskripsi:
       "Peserta seminar bersama Kementerian Perdagangan RI, membahas regulasi dan perkembangan ekosistem perdagangan digital di Indonesia.",
@@ -400,10 +423,10 @@ export const listSertifikat = [
     penyelenggara: "Universitas AMIKOM Yogyakarta",
     tempat: "Sleman, DIY",
     gambar: SertifECommerce,
-    dad: "700",
+    dad: "900",
   },
   {
-    id: 8,
+    id: 10,
     judul: "Kuliah Umum & ITC AMIKOM",
     deskripsi:
       "Aktif mengikuti Kuliah Umum dan kegiatan ITC AMIKOM untuk memperkuat soft skill seperti komunikasi, kepemimpinan, dan manajemen waktu.",
@@ -411,10 +434,10 @@ export const listSertifikat = [
     penyelenggara: "Universitas AMIKOM Yogyakarta",
     tempat: "Sleman, DIY",
     gambar: SertifITC,
-    dad: "800",
+    dad: "1000",
   },
   {
-    id: 9,
+    id: 11,
     judul: "Kuliah Umum Universitas AMIKOM Yogyakarta",
     deskripsi:
       "Peserta Kuliah Umum tahun 2021. Kuliah umum bertujuan untuk memberikan wawasan dan motivasi kepada mahasiswa baru mengenai kampus dan berbagai prestasinya.",
@@ -422,6 +445,6 @@ export const listSertifikat = [
     penyelenggara: "Universitas AMIKOM Yogyakarta",
     tempat: "Sleman, DIY",
     gambar: SertifKuliahUmum,
-    dad: "900",
+    dad: "1100",
   },
 ];
