@@ -48,7 +48,10 @@ const ProjectsSection = () => {
               {/* Content */}
               <div className="p-5">
                 <h3 className="text-lg font-semibold mb-2">{proyek.nama}</h3>
-                <p className="text-sm text-zinc-400 leading-relaxed mb-4 line-clamp-3">
+                <p
+                  className="text-sm leading-relaxed mb-4 line-clamp-3"
+                  style={{ color: "var(--text-faint)" }}
+                >
                   {proyek.desk}
                 </p>
 

@@ -19,7 +19,10 @@ const SkillsSection = () => {
               data-aos-delay={tool.dad}
               data-aos-duration="600"
             >
-              <div className="w-12 h-12 rounded-xl bg-zinc-800 p-2 flex items-center justify-center shrink-0 group-hover:bg-zinc-700 transition-colors">
+              <div
+                className="w-12 h-12 rounded-xl p-2 flex items-center justify-center shrink-0 transition-colors"
+                style={{ background: "var(--bg-element)" }}
+              >
                 <img
                   src={tool.gambar}
                   alt={tool.nama}
@@ -28,7 +31,9 @@ const SkillsSection = () => {
               </div>
               <div className="min-w-0">
                 <h4 className="font-semibold text-sm truncate">{tool.nama}</h4>
-                <p className="text-xs text-zinc-500 truncate">{tool.ket}</p>
+                <p className="text-xs truncate" style={{ color: "var(--text-faintest)" }}>
+                  {tool.ket}
+                </p>
               </div>
             </div>
           ))}

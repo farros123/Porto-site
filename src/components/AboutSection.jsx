@@ -23,7 +23,7 @@ const AboutSection = () => {
               className="w-12 h-12 rounded-lg object-cover hidden sm:block"
             />
             <div className="w-full">
-              <p className="text-zinc-300 leading-relaxed text-base">
+              <p className="leading-relaxed text-base" style={{ color: "var(--text-secondary)" }}>
                 Saya memiliki ketertarikan kuat di bidang{" "}
                 <span className="text-violet-400 font-medium">System Analyst</span>,{" "}
                 <span className="text-violet-400 font-medium">UI/UX Design</span>, dan{" "}
@@ -36,14 +36,19 @@ const AboutSection = () => {
             </div>
           </div>
 
-          <div className="border-t border-zinc-800 pt-6 flex flex-wrap items-center justify-between gap-4">
+          <div
+            className="pt-6 flex flex-wrap items-center justify-between gap-4"
+            style={{ borderTop: "1px solid var(--border-color)" }}
+          >
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-lg bg-violet-500/10 flex items-center justify-center">
                 <i className="ri-graduation-cap-line text-violet-400 ri-lg" />
               </div>
               <div>
                 <p className="text-sm font-semibold">Sistem Informasi</p>
-                <p className="text-xs text-zinc-500">Universitas AMIKOM Yogyakarta</p>
+                <p className="text-xs" style={{ color: "var(--text-faintest)" }}>
+                  Universitas AMIKOM Yogyakarta
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -54,7 +59,9 @@ const AboutSection = () => {
                 <p className="text-sm font-semibold">
                   13<span className="text-violet-400">+</span> Proyek
                 </p>
-                <p className="text-xs text-zinc-500">Selesai dikerjakan</p>
+                <p className="text-xs" style={{ color: "var(--text-faintest)" }}>
+                  Selesai dikerjakan
+                </p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -63,7 +70,9 @@ const AboutSection = () => {
               </div>
               <div>
                 <p className="text-sm font-semibold">Open to work</p>
-                <p className="text-xs text-zinc-500">Open to work</p>
+                <p className="text-xs" style={{ color: "var(--text-faintest)" }}>
+                  Open to work
+                </p>
               </div>
             </div>
           </div>

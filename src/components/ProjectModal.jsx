@@ -14,11 +14,18 @@ const ProjectModal = ({ proyek, onClose }) => {
       onClick={onClose}
     >
       <div
-        className="relative bg-zinc-900 border border-zinc-800 rounded-2xl w-full max-w-3xl shadow-2xl animate-fade-up overflow-hidden"
+        className="relative rounded-2xl w-full max-w-3xl shadow-2xl animate-fade-up overflow-hidden"
+        style={{
+          background: "var(--bg-modal)",
+          border: "1px solid var(--border-color)",
+        }}
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="flex items-center justify-between p-4 border-b border-zinc-800">
+        <div
+          className="flex items-center justify-between p-4"
+          style={{ borderBottom: "1px solid var(--border-color)" }}
+        >
           <h3 className="font-semibold text-sm truncate pr-4">{proyek.nama}</h3>
           <div className="flex items-center gap-3">
             {proyek.github && (
@@ -26,14 +33,16 @@ const ProjectModal = ({ proyek, onClose }) => {
                 href={proyek.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-zinc-400 hover:text-white transition-colors"
+                className="transition-colors"
+                style={{ color: "var(--text-faint)" }}
               >
                 <i className="ri-github-line ri-lg" />
               </a>
             )}
             <button
               onClick={onClose}
-              className="text-zinc-400 hover:text-white transition-colors cursor-pointer"
+              className="transition-colors cursor-pointer"
+              style={{ color: "var(--text-faint)" }}
               aria-label="Close"
             >
               <i className="ri-close-line ri-xl" />
@@ -42,7 +51,10 @@ const ProjectModal = ({ proyek, onClose }) => {
         </div>
 
         {/* Image */}
-        <div className="relative w-full h-[400px] bg-zinc-950">
+        <div
+          className="relative w-full h-[400px]"
+          style={{ background: "var(--bg-modal-img)" }}
+        >
           <img
             src={images[slideIndex]}
             alt={`Preview ${slideIndex + 1}`}
@@ -54,14 +66,24 @@ const ProjectModal = ({ proyek, onClose }) => {
             <>
               <button
                 onClick={prevSlide}
-                className="absolute top-1/2 left-3 -translate-y-1/2 w-10 h-10 rounded-full bg-zinc-900/80 border border-zinc-700 flex items-center justify-center text-white hover:bg-violet-600 transition-all cursor-pointer"
+                className="absolute top-1/2 left-3 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-violet-600 transition-all cursor-pointer"
+                style={{
+                  background: "var(--bg-modal)",
+                  border: "1px solid var(--border-subtle)",
+                  opacity: 0.9,
+                }}
                 aria-label="Previous"
               >
                 <i className="ri-arrow-left-s-line ri-lg" />
               </button>
               <button
                 onClick={nextSlide}
-                className="absolute top-1/2 right-3 -translate-y-1/2 w-10 h-10 rounded-full bg-zinc-900/80 border border-zinc-700 flex items-center justify-center text-white hover:bg-violet-600 transition-all cursor-pointer"
+                className="absolute top-1/2 right-3 -translate-y-1/2 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-violet-600 transition-all cursor-pointer"
+                style={{
+                  background: "var(--bg-modal)",
+                  border: "1px solid var(--border-subtle)",
+                  opacity: 0.9,
+                }}
                 aria-label="Next"
               >
                 <i className="ri-arrow-right-s-line ri-lg" />
@@ -72,16 +94,24 @@ const ProjectModal = ({ proyek, onClose }) => {
 
         {/* Dots / Indicators */}
         {images.length > 1 && (
-          <div className="flex items-center justify-center gap-2 p-3 border-t border-zinc-800">
+          <div
+            className="flex items-center justify-center gap-2 p-3"
+            style={{ borderTop: "1px solid var(--border-color)" }}
+          >
             {images.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setSlideIndex(i)}
-                className={`w-2 h-2 rounded-full transition-all cursor-pointer ${
+                className={`h-2 rounded-full transition-all cursor-pointer ${
                   i === slideIndex
                     ? "bg-violet-500 w-6"
-                    : "bg-zinc-600 hover:bg-zinc-500"
+                    : "w-2 hover:bg-zinc-500"
                 }`}
+                style={
+                  i !== slideIndex
+                    ? { background: "var(--border-subtle)" }
+                    : undefined
+                }
                 aria-label={`Slide ${i + 1}`}
               />
             ))}

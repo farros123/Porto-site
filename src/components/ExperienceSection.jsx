@@ -48,19 +48,22 @@ const ExperienceSection = () => {
                   {/* Details */}
                   <div>
                     <h3 className="text-lg font-semibold mb-3">{item.judul}</h3>
-                    <p className="text-sm text-zinc-400 leading-relaxed mb-4">
+                    <p
+                      className="text-sm leading-relaxed mb-4"
+                      style={{ color: "var(--text-faint)" }}
+                    >
                       {item.deskripsi}
                     </p>
                     <div className="space-y-1.5 text-xs">
-                      <div className="flex items-center gap-2 text-zinc-500">
+                      <div className="flex items-center gap-2" style={{ color: "var(--text-faintest)" }}>
                         <i className="ri-calendar-line text-violet-400" />
                         <span>{item.bulan}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-zinc-500">
+                      <div className="flex items-center gap-2" style={{ color: "var(--text-faintest)" }}>
                         <i className="ri-building-line text-violet-400" />
                         <span>{item.penyelenggara}</span>
                       </div>
-                      <div className="flex items-center gap-2 text-zinc-500">
+                      <div className="flex items-center gap-2" style={{ color: "var(--text-faintest)" }}>
                         <i className="ri-map-pin-line text-violet-400" />
                         <span>{item.tempat}</span>
                       </div>

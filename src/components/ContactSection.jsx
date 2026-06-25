@@ -13,7 +13,10 @@ const ContactSection = () => {
           {/* Left - Info */}
           <div className="space-y-6" data-aos="fade-up" data-aos-duration="800">
             <h3 className="text-xl font-semibold">Mari terhubung!</h3>
-            <p className="text-zinc-400 leading-relaxed text-sm">
+            <p
+              className="leading-relaxed text-sm"
+              style={{ color: "var(--text-faint)" }}
+            >
               Saya terbuka untuk peluang kerja, proyek freelance, atau sekadar 
               berdiskusi tentang teknologi. Jangan ragu untuk menghubungi saya.
             </p>
@@ -21,9 +24,13 @@ const ContactSection = () => {
             <div className="space-y-4">
               <a
                 href="mailto:farrossyahreal7@gmail.com"
-                className="flex items-center gap-3 text-zinc-400 hover:text-violet-400 transition-colors group"
+                className="flex items-center gap-3 transition-colors group"
+                style={{ color: "var(--text-faint)" }}
               >
-                <div className="w-10 h-10 rounded-lg bg-zinc-800 group-hover:bg-violet-500/10 flex items-center justify-center transition-colors">
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors group-hover:bg-violet-500/10"
+                  style={{ background: "var(--bg-element)" }}
+                >
                   <i className="ri-mail-line text-violet-400" />
                 </div>
                 <span className="text-sm">farrossyahreal7@gmail.com</span>
@@ -33,9 +40,13 @@ const ContactSection = () => {
                 href="https://www.linkedin.com/in/farros-syahreal-067b66272/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-zinc-400 hover:text-violet-400 transition-colors group"
+                className="flex items-center gap-3 transition-colors group"
+                style={{ color: "var(--text-faint)" }}
               >
-                <div className="w-10 h-10 rounded-lg bg-zinc-800 group-hover:bg-violet-500/10 flex items-center justify-center transition-colors">
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors group-hover:bg-violet-500/10"
+                  style={{ background: "var(--bg-element)" }}
+                >
                   <i className="ri-linkedin-fill text-violet-400" />
                 </div>
                 <span className="text-sm">LinkedIn</span>
@@ -45,9 +56,13 @@ const ContactSection = () => {
                 href="https://github.com/farros123"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-zinc-400 hover:text-violet-400 transition-colors group"
+                className="flex items-center gap-3 transition-colors group"
+                style={{ color: "var(--text-faint)" }}
               >
-                <div className="w-10 h-10 rounded-lg bg-zinc-800 group-hover:bg-violet-500/10 flex items-center justify-center transition-colors">
+                <div
+                  className="w-10 h-10 rounded-lg flex items-center justify-center transition-colors group-hover:bg-violet-500/10"
+                  style={{ background: "var(--bg-element)" }}
+                >
                   <i className="ri-github-fill text-violet-400" />
                 </div>
                 <span className="text-sm">GitHub</span>
@@ -65,7 +80,11 @@ const ContactSection = () => {
             data-aos-duration="1000"
           >
             <div className="space-y-1.5">
-              <label htmlFor="nama" className="text-sm font-medium text-zinc-300">
+              <label
+                htmlFor="nama"
+                className="text-sm font-medium"
+                style={{ color: "var(--text-secondary)" }}
+              >
                 Nama Lengkap
               </label>
               <input
@@ -74,12 +93,21 @@ const ContactSection = () => {
                 id="nama"
                 placeholder="Masukkan Nama"
                 required
-                className="w-full bg-zinc-800/50 border border-zinc-700 rounded-xl px-4 py-3 text-sm placeholder:text-zinc-600 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all"
+                className="w-full rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all"
+                style={{
+                  background: "var(--input-bg)",
+                  border: "1px solid var(--input-border)",
+                  color: "var(--text-primary)",
+                }}
               />
             </div>
 
             <div className="space-y-1.5">
-              <label htmlFor="email" className="text-sm font-medium text-zinc-300">
+              <label
+                htmlFor="email"
+                className="text-sm font-medium"
+                style={{ color: "var(--text-secondary)" }}
+              >
                 Email
               </label>
               <input
@@ -88,12 +116,21 @@ const ContactSection = () => {
                 id="email"
                 placeholder="Masukkan Email"
                 required
-                className="w-full bg-zinc-800/50 border border-zinc-700 rounded-xl px-4 py-3 text-sm placeholder:text-zinc-600 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all"
+                className="w-full rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all"
+                style={{
+                  background: "var(--input-bg)",
+                  border: "1px solid var(--input-border)",
+                  color: "var(--text-primary)",
+                }}
               />
             </div>
 
             <div className="space-y-1.5">
-              <label htmlFor="pesan" className="text-sm font-medium text-zinc-300">
+              <label
+                htmlFor="pesan"
+                className="text-sm font-medium"
+                style={{ color: "var(--text-secondary)" }}
+              >
                 Pesan
               </label>
               <textarea
@@ -101,7 +138,12 @@ const ContactSection = () => {
                 id="pesan"
                 rows="5"
                 placeholder="Tulis pesan Anda..."
-                className="w-full bg-zinc-800/50 border border-zinc-700 rounded-xl px-4 py-3 text-sm placeholder:text-zinc-600 focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all resize-none"
+                className="w-full rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all resize-none"
+                style={{
+                  background: "var(--input-bg)",
+                  border: "1px solid var(--input-border)",
+                  color: "var(--text-primary)",
+                }}
               />
             </div>
 

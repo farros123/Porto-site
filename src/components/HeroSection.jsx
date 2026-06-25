@@ -7,19 +7,30 @@ const HeroSection = () => {
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-12 items-center">
           {/* Left - Text */}
           <div className="animate-fade-up">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-zinc-800/60 border border-zinc-700/50 mb-8">
+            <div
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-8"
+              style={{
+                background: "var(--bg-secondary)",
+                border: "1px solid var(--border-color)",
+              }}
+            >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              <span className="text-sm text-zinc-400">Open to work</span>
+              <span className="text-sm" style={{ color: "var(--text-faint)" }}>
+                Open to work
+              </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
               Hi, Saya{" "}
               <span className="gradient-text">Ghalib Farros</span>
               <br />
-              <span className="text-zinc-300">Syahreal</span>
+              <span style={{ color: "var(--text-secondary)" }}>Syahreal</span>
             </h1>
 
-            <p className="text-zinc-400 text-lg leading-relaxed mb-8 max-w-lg">
+            <p
+              className="text-lg leading-relaxed mb-8 max-w-lg"
+              style={{ color: "var(--text-faint)" }}
+            >
               Lulusan jurusan Sistem Informasi di Universitas Amikom Yogyakarta.
             </p>
 
@@ -43,21 +54,27 @@ const HeroSection = () => {
                 <h3 className="text-3xl font-bold">
                   13<span className="text-violet-500">+</span>
                 </h3>
-                <p className="text-sm text-zinc-500">Proyek Selesai</p>
+                <p className="text-sm" style={{ color: "var(--text-faintest)" }}>
+                  Proyek Selesai
+                </p>
               </div>
-              <div className="w-px bg-zinc-800" />
+              <div className="w-px" style={{ background: "var(--bg-element)" }} />
               <div>
                 <h3 className="text-3xl font-bold">
                   9<span className="text-violet-500">+</span>
                 </h3>
-                <p className="text-sm text-zinc-500">Sertifikat</p>
+                <p className="text-sm" style={{ color: "var(--text-faintest)" }}>
+                  Sertifikat
+                </p>
               </div>
-              <div className="w-px bg-zinc-800" />
+              <div className="w-px" style={{ background: "var(--bg-element)" }} />
               <div>
                 <h3 className="text-3xl font-bold">
                   3<span className="text-violet-500">+</span>
                 </h3>
-                <p className="text-sm text-zinc-500">Tahun Belajar</p>
+                <p className="text-sm" style={{ color: "var(--text-faintest)" }}>
+                  Tahun Belajar
+                </p>
               </div>
             </div>
           </div>
@@ -80,7 +97,9 @@ const HeroSection = () => {
                   <img src={DataImage.coding} alt="" className="w-8 h-8 rounded-md" />
                   <div>
                     <p className="text-xs font-semibold">System Analyst</p>
-                    <p className="text-[10px] text-zinc-500">Web Developer</p>
+                    <p className="text-[10px]" style={{ color: "var(--text-faintest)" }}>
+                      Web Developer
+                    </p>
                   </div>
                 </div>
               </div>

@@ -23,6 +23,11 @@ import Tools12 from "/assets/tools/php.png";
 import Tools13 from "/assets/tools/python.png";
 import Tools14 from "/assets/tools/codeigniter.png";
 import Tools15 from "/assets/tools/kotlin.png";
+import Tools16 from "/assets/tools/wp.png";
+import Tools17 from "/assets/tools/git.png";
+import Tools18 from "/assets/tools/postgree.png";
+import Tools19 from "/assets/tools/mysql.png";
+import Tools20 from "/assets/tools/jupyter.png";
 
 export const listTools = [
   {
@@ -130,6 +135,41 @@ export const listTools = [
     ket: "Bahasa Pemrograman",
     dad: "1500",
   },
+  {
+    id: 16,
+    gambar: Tools16,
+    nama: "Wordpress",
+    ket: "CMS",
+    dad: "1600",
+  },
+  {
+    id: 17,
+    gambar: Tools17,
+    nama: "Git",
+    ket: "Version Control",
+    dad: "1700",
+  },
+  {
+    id: 18,
+    gambar: Tools18,
+    nama: "PostgreSQL",
+    ket: "Database",
+    dad: "1800",
+  },
+  {
+    id: 19,
+    gambar: Tools19,
+    nama: "MySQL",
+    ket: "Database",
+    dad: "1900",
+  },
+  {
+    id: 20,
+    gambar: Tools20,
+    nama: "Jupyter Notebook",
+    ket: "IDE",
+    dad: "2000",
+  }
 ];
 
 import Proyek1 from "/assets/proyek/healthydoc.jpg";
@@ -171,6 +211,18 @@ import SIP6 from "/assets/proyek/penyewaan6.jpg";
 import SIP7 from "/assets/proyek/penyewaan7.jpg";
 import SIP8 from "/assets/proyek/penyewaan8.jpg";
 import SIP9 from "/assets/proyek/penyewaan9.jpg";
+
+import ML1 from "/assets/proyek/AQIcategories.png";
+import ML2 from "/assets/proyek/AQIdistribution.png"
+import ML3 from "/assets/proyek/AQItraining.png";
+
+import SR1 from "/assets/proyek/SR1.png";
+import SR2 from "/assets/proyek/SR2.png";
+import SR3 from "/assets/proyek/SR3.png";
+
+import TR1 from "/assets/proyek/travic.png";
+import TR2 from "/assets/proyek/travic1.png";
+import TR3 from "/assets/proyek/travic2.png";
 
 import GMTK1 from "/assets/proyek/gimmtk.jpg";
 import GBALL from "/assets/proyek/GBALL.jpg";
@@ -288,30 +340,60 @@ export const listProyek = [
   },
   {
     id: 10,
+    gambar: ML1,
+    nama: "Classification of Air Quality Index (AQI) using Machine Learning",
+    desk: "Klasifikasi Kualitas Udara Menggunakan Machine Learning adalah proyek yang bertujuan untuk mengklasifikasikan kualitas udara menggunakan machine learning.",
+    tools: ["Vscode", "Python", "Ipynb"],
+    preview: [ML1, ML2, ML3],
+    dad: "1200",
+    github: "https://github.com/farros123/AQI",
+  },
+  {
+    id: 11,
+    gambar: SR1,
+    nama: "Movie Recommendation System",
+    desk: "Mengembangkan sistem rekomendasi film yang memanfaatkan algoritma machine learning untuk memberikan rekomendasi yang dipersonalisasi berdasarkan preferensi pengguna. Sistem menganalisis data film seperti genre, rating, dan karakteristik lainnya untuk menghasilkan rekomendasi yang relevan dan membantu pengguna menemukan film sesuai minat mereka.",
+    tools: ["Vscode", "Python", "Ipynb"],
+    preview: [SR1, SR2, SR3],
+    dad: "1300",
+    github: "https://github.com/farros123/SistemRekomendasi",
+  },
+  {
+    id: 12,
+    gambar: TR1,
+    nama: "Visualisasi Data Predicted Traffic",
+    desk: "Visualisasi Data Predicted Traffic adalah proyek yang bertujuan untuk memvisualisasikan data predicted traffic menggunakan machine learning.",
+    tools: ["Vscode", "Python", "Ipynb"],
+    preview: [TR1, TR2, TR3],
+    dad: "1400",
+    github: "https://github.com/farros123/Traffic-Prediction",
+  },
+  {
+    id: 13,
     gambar: GMTK1,
     nama: "Game Edukatif Robot-MTK",
     desk: "Robot-MTK adalah game edukatif interaktif bertema robot yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
     tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
     preview: "https://robot-math-ten.vercel.app/",
-    dad: "1100",
+    dad: "1500",
   },
   {
-    id: 11,
+    id: 14,
     gambar: GBALL,
     nama: "Game Edukatif MathBall",
     desk: "MathBall adalah game edukatif interaktif bertema matematika yang membantu siswa belajar matematika dengan cara yang menyenangkan, dilengkapi materi pembelajaran dan permainan interaktif untuk meningkatkan pemahaman konsep dasar.",
     tools: ["Vscode", "html", "css", "javascript", "reactjs"],
     preview: "https://mathball-game.vercel.app/",
-    dad: "1200",
+    dad: "1600",
   },
   {
-    id: 12,
+    id: 15,
     gambar: Catur,
     nama: "Game Catur",
     desk: "Game catur interaktif yang dirancang untuk mempermudah pengguna dalam bermain catur. Desain difokuskan pada pengalaman bermain yang nyaman, modern, dan responsif di berbagai perangkat.",
     tools: ["Vscode", "Vite", "HTML", "CSS", "Javascript", "ReactJs"],
     preview: "https://chess-react-9biv.vercel.app/",
-    dad: "1300",
+    dad: "1700",
   },
 ];
 
